@@ -3309,14 +3309,15 @@ function renderSingolaPotenziata(item, idx){
    <div class="combo-leg" data-recid="${escHtml(id1)}">
     <div style="flex:1;min-width:0">
      <div class="n">${escHtml(a.match)}</div>
-     <div class="m">🎯 LEG 1: <strong style="color:#fff">${escHtml(a.market)}</strong> · ${escHtml(a.lega||'')} · ${escHtml(cleanTime(a.ora))} · Conf ${a.confidence}${a.hasM1?' · 🏅':''}</div>
+     <div class="m">${escHtml(a.market)} · ${escHtml(cleanTime(a.ora))} · ${escHtml(a.lega||'')} · Conf ${a.confidence}${a.hasM1?' · 🏅':''}</div>
+
     </div>
     <div class="o">${a.odds.toFixed(2)}</div>
    </div>
    <div class="combo-leg" data-recid="${escHtml(id2)}">
     <div style="flex:1;min-width:0">
      <div class="n">${escHtml(b.match)}</div>
-     <div class="m">⚡ LEG 2: <strong style="color:#fff">${escHtml(b.market)}</strong> · ${escHtml(b.lega||'')} · ${escHtml(cleanTime(b.ora))} · Conf ${b.confidence}${b.hasM1?' · 🏅':''}</div>
+<div class="m">${escHtml(b.market)} · ${escHtml(cleanTime(b.ora))} · ${escHtml(b.lega||'')} · Conf ${b.confidence}${b.hasM1?' · 🏅':''}</div>
     </div>
     <div class="o">${b.odds.toFixed(2)}</div>
    </div>
