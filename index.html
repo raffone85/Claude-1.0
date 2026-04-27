@@ -3289,7 +3289,10 @@ function renderCombo(combo, type, idx){
   <div style="margin-top:12px"><button class="mini-btn primary" data-add-combo="${type}|${idx}">+ Aggiungi alla schedina</button></div>
  </div>`;
 }
-
+function recIdFor(rec){
+  if(!rec) return '';
+  return `${rec._key || ''}|${rec.market || ''}`;
+}
 function renderSingolaPotenziata(item, idx){
  const a = item.leg1;
  const b = item.leg2;
