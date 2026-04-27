@@ -2009,16 +2009,7 @@ function parseAndStore(key, text){
   S.datasets[key] = rows;
   bus.emit('csv:loaded', {key, count: rows.length});
 }
-</script>
 
-function parseAndStore(key, text){
- const fn = PARSERS[key];
- if(!fn) throw new Error('Dataset non gestito: ' + key);
- const rows = fn(text);
- if(!Array.isArray(rows)) throw new Error('Parsing invalido');
- S.datasets[key] = rows;
- bus.emit('csv:loaded', {key, count: rows.length});
-}
 
 /* === FINE PARTE 1/3 v6 === */
 /* === INIZIO PARTE 2/3 v5 · Generatori Bollamaker-style + Modalità tolerante === */
